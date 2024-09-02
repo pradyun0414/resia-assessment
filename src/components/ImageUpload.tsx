@@ -22,7 +22,7 @@ function FileUploadComponent(props: any) {
       </Flex>
       <StorageManager
         acceptedFileTypes={['image/*']}
-        maxFileCount={3}
+        maxFileCount={8}
         path="images/"
         accessLevel='guest'
         onUploadSuccess={(result) => {

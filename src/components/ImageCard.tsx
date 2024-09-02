@@ -6,7 +6,7 @@ import { MdClose } from "react-icons/md";
 AWS.config.update({
     region: 'us-east-2',
     credentials: new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: 'us-east-2:0b298698-c4f6-4d42-b636-891b11768e12'
+        IdentityPoolId: 'us-east-2:7d094e7e-966e-48d4-9b56-ed45e4d1af1f'
     })
 });
 
@@ -16,7 +16,7 @@ async function getAICaption(imageKey: string) {
     const params = {
         Image: {
             S3Object: {
-                Bucket: 'resiabucket62f1b-dev',
+                Bucket: 'resia1c957d8a142a47b4975cc0a5c19a24ac6a12b-dev',
                 Name: imageKey,
             },
         },

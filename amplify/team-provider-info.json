@@ -1,22 +1,22 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-resia-dev-62f1b-authRole",
-      "UnauthRoleArn": "arn:aws:iam::253490767039:role/amplify-resia-dev-62f1b-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::253490767039:role/amplify-resia-dev-62f1b-authRole",
+      "AuthRoleName": "amplify-resia-dev-6a12b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::253490767039:role/amplify-resia-dev-6a12b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::253490767039:role/amplify-resia-dev-6a12b-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-resia-dev-62f1b-deployment",
-      "UnauthRoleName": "amplify-resia-dev-62f1b-unauthRole",
-      "StackName": "amplify-resia-dev-62f1b",
-      "StackId": "arn:aws:cloudformation:us-east-2:253490767039:stack/amplify-resia-dev-62f1b/3456e6f0-6844-11ef-a15d-0a923232bca7",
-      "AmplifyAppId": "d2x6jtd8qq7nuk"
+      "DeploymentBucketName": "amplify-resia-dev-6a12b-deployment",
+      "UnauthRoleName": "amplify-resia-dev-6a12b-unauthRole",
+      "StackName": "amplify-resia-dev-6a12b",
+      "StackId": "arn:aws:cloudformation:us-east-2:253490767039:stack/amplify-resia-dev-6a12b/507d9d90-6904-11ef-8bb5-0a64a8a5f985",
+      "AmplifyAppId": "dxqh8d0pckl8d"
     },
     "categories": {
       "auth": {
-        "resia06ea5554": {}
+        "resia34ba8325": {}
       },
       "storage": {
-        "resiaimages": {}
+        "resiastorage": {}
       }
     }
   }

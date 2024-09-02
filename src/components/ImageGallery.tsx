@@ -2,7 +2,8 @@
 AWS.config.update({
     region: 'us-east-2',
     credentials: new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: 'us-east-2:0b298698-c4f6-4d42-b636-891b11768e12'
+        IdentityPoolId: 'us-east-2:7d094e7e-966e-48d4-9b56-ed45e4d1af1f'
+        
     })
 });
 
@@ -32,7 +33,7 @@ const fetchImageKeys = async () => {
 const fetchImageUrls = async (keys: any) => {
     const urls = await Promise.all(
         keys.map(async (key: any) => {
-            const params = { Bucket: 'resiabucket62f1b-dev', Key: key };
+            const params = { Bucket: 'resia1c957d8a142a47b4975cc0a5c19a24ac6a12b-dev', Key: key };
             const url = await s3.getSignedUrlPromise('getObject', params);
             return { key, url };
         })
@@ -73,12 +74,12 @@ function ImageGallery(props:any) {
     const handleRename = async (oldKey: string, newKey: string) => {
         try {
             await s3.copyObject({
-                Bucket: 'resiabucket62f1b-dev',
-                CopySource: `resiabucket62f1b-dev/${oldKey}`,
+                Bucket: 'resia1c957d8a142a47b4975cc0a5c19a24ac6a12b-dev',
+                CopySource: `resia1c957d8a142a47b4975cc0a5c19a24ac6a12b-dev/${oldKey}`,
                 Key: newKey,
             }).promise();
             await s3.deleteObject({
-                Bucket: 'resiabucket62f1b-dev',
+                Bucket: 'resia1c957d8a142a47b4975cc0a5c19a24ac6a12b-dev',
                 Key: oldKey,
             }).promise();
 
@@ -96,7 +97,7 @@ function ImageGallery(props:any) {
     const handleDelete = async (imageKey: string) => {
         try {
             await s3.deleteObject({
-                Bucket: 'resiabucket62f1b-dev',
+                Bucket: 'resia1c957d8a142a47b4975cc0a5c19a24ac6a12b-dev',
                 Key: imageKey,
             }).promise();
 
