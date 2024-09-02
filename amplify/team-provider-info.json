@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-resia-dev-62f1b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::253490767039:role/amplify-resia-dev-62f1b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::253490767039:role/amplify-resia-dev-62f1b-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-resia-dev-62f1b-deployment",
+      "UnauthRoleName": "amplify-resia-dev-62f1b-unauthRole",
+      "StackName": "amplify-resia-dev-62f1b",
+      "StackId": "arn:aws:cloudformation:us-east-2:253490767039:stack/amplify-resia-dev-62f1b/3456e6f0-6844-11ef-a15d-0a923232bca7",
+      "AmplifyAppId": "d2x6jtd8qq7nuk"
+    },
+    "categories": {
+      "auth": {
+        "resia06ea5554": {}
+      },
+      "storage": {
+        "resiaimages": {}
+      }
+    }
+  }
+}
