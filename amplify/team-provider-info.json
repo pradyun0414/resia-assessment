@@ -17,6 +17,12 @@
       },
       "storage": {
         "resiastorage": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dxqh8d0pckl8d",
+          "type": "cicd"
+        }
       }
     }
   }
